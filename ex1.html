@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Ex1</title>
+</head>
+<body>
+
+    <button onclick="age()">Try</button>
+
+
+    <script>
+        function age() {
+            
+            let n = prompt("enter ur age");
+            let num = parseInt(n);
+
+
+            if (num>0) {
+                
+                if(num<11){
+                    alert("child");
+                    age();
+                    
+                }
+                else if(num>10 && num<=18 ){
+                    alert("tennager");
+                    age();
+                    
+                }
+                else if(num>=19 && num<=50 ){
+                    alert("grown up");
+                    age();
+                    
+                }
+                else if(num>50){
+                    alert("old");
+                    age();
+                    
+                }
+
+                
+            }
+            // else{
+            //     alert("enter a correct number");
+            //     age();
+                
+            // }
+
+
+            
+            // do {
+                
+            //     }
+            //     while (n!="cancel");
+            
+            
+        }
+    </script>
+</body>
+</html>

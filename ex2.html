@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Ex2</title>
+</head>
+<body>
+    
+    <button onclick="vowels_count()">Try</button>
+
+    <script>
+        function vowels_count() {
+            let str = prompt("enter the string");
+
+            const vowels = ["a","e","o","u","i"];
+            
+            var count = 0;
+
+            for (var i = 0; i < str.length; i++) {
+                
+
+                for (var j = 0; j < vowels.length; j++) {
+                    
+                    if(str[i] == vowels[j]){
+
+                        count++;
+
+                    }
+
+                }
+   
+            }
+
+            alert("number of vowels ="+count);
+
+        }
+    </script>
+</body>
+</html>
